@@ -4,8 +4,8 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 {
-    'name': 'Ajout de Ecotax',
-    'summary': 'ajout_ecotax',
+    'name': 'Ajout de Ecotaxe',
+    'summary': 'ajout_ecotaxe',
     'license': 'AGPL-3',
     'category': 'Purchases',
     'version': '1',
