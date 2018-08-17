@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="view_merge_invoice" model="ir.ui.view">
+            <field name="name">Merger Partner Invoice</field>
+            <field name="model">merge.invoice</field>
+            <field name="arch" type="xml">
+                <form string="Merge Partner Invoice" version="7.0">
+                    <group>
+                        <separator
+                            string="Are you sure you want to merge these invoices ?"
+                            colspan="4" />
+                        <p>
+                           Please note that:<br/><br/>
+                           Invoices will only be merged if:<br/>
+                           * Invoices are in draft<br/>
+                           * Partner wise all invoices are need with same company, currency, journal, salesman, account and type of the invoice<br/><br/>
+                        </p>
+                    </group>
+                    <footer>
+                        <button name="merge_all_invoices" string="Merge Invoices"
+                            type="object" class="oe_highlight" />
+                        or
+                        <button string="Cancel" class="oe_link"
+                            special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <act_window name="Merge Partner Invoice" res_model="merge.invoice"
+            src_model="account.invoice" view_mode="form" target="new"
+            multi="True" key2="client_action_multi" id="action_view_invoice_merge"/>
+
+</odoo>
