@@ -6,7 +6,7 @@
     "name": "Fusionner des devis",
     "summary": "Permets la fusion de devis d'un même partenaire avant confirmation",
     "version": "10",
-    "category": "Sales Management",
+    "category": "Sales",
     "website": "https://www.optimadsi.fr",
     "author": "Audrey Papin",
     "license": "AGPL-3",
